@@ -45,7 +45,7 @@ def generatePerms(fppgsort, main_budget):
     teams = []
     scores = []
     iterations = 0
-    while len(teams) < 100 and iterations < 10000000:
+    while len(teams) < 100 and iterations < 1000000:
         temp_fppg_sort = fppgsort.copy()
         temp_fppg_sort = temp_fppg_sort[:len(temp_fppg_sort)//2]
         budget = copy.copy(main_budget)
@@ -58,7 +58,7 @@ def generatePerms(fppgsort, main_budget):
         }
         team = []
         team_iterations = 0
-        while len(team) < 8 and team_iterations < 100000 and iterations < 10000000:
+        while len(team) < 8 and team_iterations < 10000 and iterations < 1000000:
             team_iterations += 1
             iterations += 1
             rand_seed = random.randint(0,len(temp_fppg_sort)-1)

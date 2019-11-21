@@ -1,11 +1,11 @@
-version: 0.1
+version: 0.2
 env:
   variables:
     SCRIPT_DIR: ./scripts
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: 3.7
   build:
     commands:
       - echo "⚙️ Installing Python dependencies ... ⚙️"

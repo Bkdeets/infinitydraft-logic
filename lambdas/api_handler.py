@@ -2,7 +2,8 @@ import decimal
 import boto3
 import json
 import os
-import soc
+from logic import soc
+
 
 def has_allowed_params(params):
     allowed_params = {

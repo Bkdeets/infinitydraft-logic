@@ -24,7 +24,7 @@ cd ..
 echo "📁 Moving dependencies.zip file to root project directory 📁"
 mv ./dependencies/dependencies.zip .
 
-api_handler="api_handler coffeepot-dev-api-handler"
+api_handler="api_handler infinitydraft-api-handler"
 
 for i in "$api_handler"
 do

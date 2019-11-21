@@ -9,10 +9,10 @@ def api_response(status, body):
         "isBase64Encoded": True,
         "statusCode": status,
         "headers": {'Content-Type': 'application/json'},
-        "body": json.dumps(body, default=decimal_default)
+        "body": json.dumps(body)
     }
     return payload
-    
+
 def has_allowed_params(params):
     allowed_params = {
         'number_of_teams', 

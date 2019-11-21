@@ -1,5 +1,5 @@
 add_to_zip () {
-    cp dependencies.zip $1.zip && zip -g $1.zip $1_lambda.py
+    cp dependencies.zip $1.zip && zip -g $1.zip $1.py
 }
 
 upload_to_s3 () {

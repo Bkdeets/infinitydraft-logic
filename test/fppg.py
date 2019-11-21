@@ -18,10 +18,10 @@ budget = 50000
 players = []
 #Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame
 fppgsort = []
-with open('dksalaries_nov9_game.csv') as file:
+with open('DKSalaries_satNov22.csv', encoding='utf-8', errors='ignore') as file:
     reader = csv.reader(file, delimiter=',')
     for i, col in enumerate(reader):
-        if i != -1:
+        if i != -1 and i != 0:
             fppg = float(col[8])
             salary = int(col[5])
             if fppg > 0:

@@ -13,6 +13,9 @@ update_lambda_function () {
     --s3-key lambda/src/$2.zip
 }
 
+echo "📁 Moving logic directory to dependencies folder 📁"
+mv ./logic ./dependencies/
+
 echo "📁 Moving /lambdas/ folder contents to root dependencies folder 📁"
 mv ./lambdas/* .
 rmdir ./lambdas

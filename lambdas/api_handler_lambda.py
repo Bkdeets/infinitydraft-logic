@@ -10,7 +10,8 @@ def has_allowed_params(params):
         'number_of_teams', 
         'file',
         'budget',
-        'gameType'
+        'gameType',
+        'sport'
     }
     if params:
         return allowed_params >= params.keys()

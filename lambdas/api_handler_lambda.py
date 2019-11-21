@@ -4,7 +4,15 @@ import json
 import os
 from logic import soc
 
-
+def api_response(status, body):
+    payload = {
+        "isBase64Encoded": True,
+        "statusCode": status,
+        "headers": {'Content-Type': 'application/json'},
+        "body": json.dumps(body, default=decimal_default)
+    }
+    return payload
+    
 def has_allowed_params(params):
     allowed_params = {
         'number_of_teams', 
